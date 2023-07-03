@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <Title></Title>
+        <Company>VirtualKeyboardNetCore</Company>
+        <Product>VirtualKeyboardNetCore</Product>
+        <UseWindowsForms>True</UseWindowsForms>
+        <StartupObject>VirtualKeyboard.App</StartupObject>
+        <GenerateDocumentationFile>False</GenerateDocumentationFile>
+        <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+        <ApplicationIcon>Resources\Keyboard.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="arion-logo.ico" />
+      <Content Include="Resources\Keyboard.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Windows.Forms">
+        <HintPath>..\..\..\..\..\Program Files (x86)\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.16\ref\net6.0\System.Windows.Forms.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Arion.Style" Version="0.5.10" />
+    </ItemGroup>
+
+</Project>
