@@ -111,9 +111,9 @@
                 Code="OEM6"
                 Content="]" />
             <models:VButton
+                wpf:Button.Icon="KeyboardReturn"
                 Click="ButtonBase_OnClick"
-                Code="ENTER"
-                Content="Ввод" />
+                Code="ENTER" />
         </UniformGrid>
         <UniformGrid Grid.Row="2" Rows="1">
             <models:VButton
